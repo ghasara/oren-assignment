@@ -1,0 +1,34 @@
+<div class="col-sm-4" *ngFor="let profile of userDetails">
+  <div class="card">
+    <div class="card-body">
+      <div class="card-body-border">
+        <img src="https://avatars.dicebear.com/v2/avataaars/%7B%7B{{profile.username}}%7D%7D.svg?options[mood][]=happy"
+          alt="Avatar" class="img">
+        <div class="user-details">
+          <h5 class="card-title">{{profile.name}}</h5>
+          <p class="card-text">
+            <span class="material-icons"> mail_outline </span>
+            <span>{{profile.email}}</span>
+          </p>
+          <p class="card-text"><span class="material-icons">
+              phone_enabled
+            </span>{{profile.phone}}</p>
+          <p class="card-text"><span class="material-icons">
+              language
+            </span>{{profile.website}}</p>
+        </div>
+        <div class="user-buttons">
+          <button><span class="material-icons heart">
+              favorite_border
+            </span></button><span class="line">|</span>
+          <button><span class="material-icons create">
+              create
+            </span></button><span class="line">|</span>
+          <button><span class="material-icons delete">
+              delete_outline
+            </span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
